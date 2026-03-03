@@ -9,10 +9,17 @@
 </head>
 
 <body>
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+    <div class="orb o3"></div>
+    <div class="grain"></div>
+  </div>
+
   <header class="topbar">
     <div class="container topbar-inner">
-      <a class="brand" href="#">
-        <img src="assets/PM2Logo.png" class="logo" alt="PM Services logo" />
+      <a class="brand" href="#top" aria-label="PM Services Home">
+        <img src="PM2Logo.png" class="logo" alt="PM Services logo" />
         <div class="brand-text">
           <div class="brand-name">PM Services</div>
           <div class="brand-sub">Precious Metals • Kingsport, Tennessee</div>
@@ -21,130 +28,210 @@
 
       <nav class="nav" aria-label="Primary">
         <a href="#overview">Overview</a>
+        <a href="#capabilities">Capabilities</a>
         <a href="#compliance">Compliance</a>
-        <a href="#business">Business</a>
         <a href="#contact">Contact</a>
       </nav>
+
+      <a class="chip" href="#contact" aria-label="Contact">
+        <span class="chip-dot"></span>
+        Business Inquiries
+      </a>
     </div>
   </header>
 
-  <main>
+  <main id="top">
     <section class="hero" id="overview">
-      <div class="container">
-        <div class="hero-card">
-          <div class="eyebrow">U.S.-based • Sole Proprietorship</div>
-          <h1>Professional precious metals operations.</h1>
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <div class="eyebrow">
+            <span class="spark"></span>
+            U.S.-based operations • Sole Proprietorship • Established 2026
+          </div>
+
+          <h1>
+            A discreet, professional<br/>
+            precious metals operation.
+          </h1>
+
           <p class="lead">
             PM Services engages in the acquisition and distribution of gold and silver bullion.
-            Operations prioritize documented transactions, consistent recordkeeping, and a
-            compliance-first approach.
+            The business is structured for consistency: documented transactions, professional counterparties,
+            and a compliance-first operating model.
           </p>
 
-          <div class="pill-row" role="list">
-            <div class="pill" role="listitem">Gold & Silver Bullion</div>
-            <div class="pill" role="listitem">Documented Transactions</div>
-            <div class="pill" role="listitem">Risk-Managed Inventory</div>
-            <div class="pill" role="listitem">U.S. Counterparties</div>
+          <div class="hero-actions">
+            <a class="btn primary" href="#contact">Contact</a>
+            <a class="btn ghost" href="#compliance">Compliance Overview</a>
           </div>
 
-          <div class="cta-row">
-            <a class="btn" href="#contact">Business Contact</a>
-            <a class="btn btn-secondary" href="#compliance">Compliance Overview</a>
+          <div class="mini-note">
+            Informational site only — no live pricing, no e-commerce, no public order flow.
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-card">
+            <div class="hero-card-top">
+              <div class="badge">Private Counterparty Footprint</div>
+              <div class="badge alt">AML Program Maintained</div>
+            </div>
+
+            <div class="metric-grid">
+              <div class="metric">
+                <div class="metric-k">Focus</div>
+                <div class="metric-v">Gold & Silver Bullion</div>
+              </div>
+              <div class="metric">
+                <div class="metric-k">Operating Model</div>
+                <div class="metric-v">Documented Transactions</div>
+              </div>
+              <div class="metric">
+                <div class="metric-k">Risk Management</div>
+                <div class="metric-v">Inventory Controls</div>
+              </div>
+              <div class="metric">
+                <div class="metric-k">Region</div>
+                <div class="metric-v">United States</div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="address">
+              <div class="address-title">Business Address</div>
+              <div class="address-lines">
+                2005 Venture Park<br/>
+                Kingsport, TN 37660
+              </div>
+              <div class="address-foot">
+                EIN: <strong>41-3319325</strong>
+              </div>
+            </div>
           </div>
 
-          <p class="note">
-            This site is informational. PM Services does not publish live pricing online and does not offer e-commerce sales through this website.
-          </p>
+          <div class="hero-sheen" aria-hidden="true"></div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container grid-2">
-        <div class="panel">
-          <h2>Business Overview</h2>
-          <ul class="list">
-            <li>Gold and silver bullion (coins and bars)</li>
-            <li>U.S. constitutional silver (select categories)</li>
-            <li>Wholesale and direct purchase transactions</li>
-            <li>Transparent buy/sell documentation and inventory controls</li>
-          </ul>
+    <section class="section" id="capabilities">
+      <div class="container">
+        <div class="section-head">
+          <h2>Capabilities</h2>
+          <p class="muted">
+            Built to reduce onboarding friction with dealers, platforms, and professional counterparties.
+          </p>
         </div>
 
-        <div class="panel">
-          <h2>Operating Principles</h2>
-          <ul class="list">
-            <li>Professional footprint (EIN, consistent address, business banking)</li>
-            <li>Documented payment methods and record retention</li>
-            <li>Risk-based counterparty practices</li>
-            <li>Onboarding-ready documentation upon request</li>
-          </ul>
+        <div class="grid-3">
+          <div class="panel">
+            <div class="panel-icon">◆</div>
+            <h3>Acquisition</h3>
+            <p>
+              Gold and silver bullion procurement through verified, documented transactions.
+            </p>
+          </div>
+
+          <div class="panel">
+            <div class="panel-icon">⬣</div>
+            <h3>Distribution</h3>
+            <p>
+              Counterparty-ready processes for wholesale relationships and structured offload.
+            </p>
+          </div>
+
+          <div class="panel">
+            <div class="panel-icon">◈</div>
+            <h3>Controls</h3>
+            <p>
+              Record retention, payment traceability practices, and risk-based screening where appropriate.
+            </p>
+          </div>
+        </div>
+
+        <div class="split">
+          <div class="panel wide">
+            <h3>Operating Principles</h3>
+            <ul class="list">
+              <li>Consistent business footprint (address, EIN, documentation)</li>
+              <li>Documented payment methods and recordkeeping</li>
+              <li>Risk-based approach to unusual activity</li>
+              <li>Onboarding-ready responses for platforms and wholesalers</li>
+            </ul>
+          </div>
+
+          <div class="panel wide">
+            <h3>Documentation Available</h3>
+            <ul class="list">
+              <li>AML Program (Effective January 2026)</li>
+              <li>W-9 (upon verified request)</li>
+              <li>Business banking verification (upon verified request)</li>
+              <li>Platform / wholesaler onboarding responses</li>
+            </ul>
+            <div class="callout">
+              Documents are shared only with verified counterparties.
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section" id="compliance">
       <div class="container">
-        <div class="panel">
-          <div class="panel-header">
+        <div class="compliance-wrap">
+          <div class="compliance-left">
             <h2>Compliance</h2>
-            <span class="badge">AML Program Maintained</span>
+            <p class="muted">
+              PM Services maintains an Anti-Money Laundering (AML) program consistent with the
+              Bank Secrecy Act and applicable regulations governing dealers in precious metals.
+              The program uses a risk-based approach and maintains appropriate records.
+            </p>
+            <p class="muted">
+              IRS Form 8300 requirements are observed for applicable cash transactions.
+            </p>
           </div>
 
-          <p class="muted">
-            PM Services maintains an Anti-Money Laundering (AML) program consistent with the Bank Secrecy Act
-            and applicable regulations governing dealers in precious metals. The business uses a risk-based
-            approach to identifying higher-risk activity and maintains appropriate records.
-          </p>
-
-          <div class="rule"></div>
-
-          <p class="muted">
-            IRS Form 8300 requirements are observed for applicable cash transactions.
-            Compliance documentation is available for onboarding and counterparty due diligence upon request.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="business">
-      <div class="container grid-2">
-        <div class="panel">
-          <h2>Business Information</h2>
-          <div class="kv">
-            <div class="k">Legal Structure</div><div class="v">Sole Proprietorship</div>
-            <div class="k">Business Address</div><div class="v">2005 Venture Park, Kingsport, TN 37660</div>
+          <div class="compliance-right">
+            <div class="stamp">
+              <div class="stamp-ring"></div>
+              <div class="stamp-inner">
+                <div class="stamp-title">AML</div>
+                <div class="stamp-sub">PROGRAM MAINTAINED</div>
+                <div class="stamp-foot">Effective Jan 2026</div>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="panel">
-          <h2>Documentation Available</h2>
-          <ul class="list">
-            <li>AML Program (January 2026 effective)</li>
-            <li>W-9 (upon request)</li>
-            <li>Business banking verification (upon request)</li>
-            <li>Platform/wholesaler onboarding responses</li>
-          </ul>
-          <p class="muted small">
-            Note: Provide documents only to verified counterparties/platforms.
-          </p>
         </div>
       </div>
     </section>
 
     <section class="section" id="contact">
       <div class="container">
-        <div class="panel">
-          <h2>Contact</h2>
-          <p class="muted">
-            For onboarding requests, compliance documentation, or business inquiries:
-          </p>
-
-          <div class="contact-box">
-            <div class="contact-label">Email</div>
-            <a class="contact-value" href="mailto:pmservicesdealer@gmail.com">info@pmservicesdealer.com</a>
+        <div class="contact-card">
+          <div>
+            <h2>Contact</h2>
+            <p class="muted">
+              For onboarding requests, compliance documentation, or business inquiries:
+            </p>
           </div>
 
+          <div class="contact-box">
+            <div class="contact-k">Email</div>
+            <!-- Replace when ready -->
+            <a class="contact-v" href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+          </div>
+
+          <div class="contact-box">
+            <div class="contact-k">Address</div>
+            <div class="contact-v">
+              2005 Venture Park, Kingsport, TN 37660
+            </div>
+          </div>
+
+          <div class="micro">
+            Informational website only. No public pricing. No e-commerce. Counterparty verification required for document release.
+          </div>
         </div>
       </div>
     </section>
@@ -154,13 +241,24 @@
     <div class="container footer-inner">
       <div>
         <div class="footer-brand">PM Services</div>
-        <div class="small muted">Kingsport, Tennessee • U.S.-based operations</div>
+        <div class="muted small">Kingsport, Tennessee • U.S.-based operations</div>
       </div>
-      <div class="small muted right">
-        2005 Venture Park<br/>
-        Kingsport, TN 37660
+      <div class="muted small right">
+        2005 Venture Park, Kingsport, TN 37660
       </div>
     </div>
   </footer>
+
+  <script>
+    // Tiny scroll-reveal (keeps it classy)
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.panel, .compliance-wrap, .contact-card, .hero-card').forEach(el => {
+      el.classList.add('reveal');
+      obs.observe(el);
+    });
+  </script>
 </body>
 </html>
